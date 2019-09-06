@@ -24,12 +24,19 @@ Detailed description
 | wlangenpmkocl  | Generates plainmasterkeys (GPU) from essid and password for use with hashcat hash-mode 2501          |
 | pwhash         | Generate hash of a word by using a given charset                                                     |
 
+To list available platforms  
+```wlangenpmkocl -l```
 
+Otherwise install clinfo  
+```sudo apt install clinfo```
+
+  
+  
+  
 Compile
 --------------
 
 Simply run:
-
 ```
 make
 make install (as super user)
@@ -40,12 +47,15 @@ Requirements
 --------------
 
 * Linux (recommended Arch, but other distros should work, too)
-
 * OpenCL and OpenCL Headers installed
-
 * libopenssl and openssl-dev installed
-
 * librt and librt-dev installed (should be installed by default)
+
+
+For Ubuntu  
+```sudo apt install ocl-icd-* opencl-headers```  
+
+
 
 
 Notice
